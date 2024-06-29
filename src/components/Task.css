@@ -1,0 +1,32 @@
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.task.done {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+}
+
+.edit-icon,.icons, .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.edit-icon:hover, .delete-icon:hover {
+    color: blue;
+}
+
+.task-card {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    z-index: 1000;
+}
